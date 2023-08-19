@@ -18,7 +18,7 @@ let s:uni_lat_bol_frk = "latin_bol_frk____𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴�
 let s:uni_lat_san =     "latin_san________𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓"
 let s:uni_lat_san_bol = "latin_san_bol____𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇"
 let s:uni_lat_san_ita = "latin_san_ita____𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻"
-let s:uni_lat_san_bol = "latin_san_bol_ita𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯"
+let s:uni_lat_san_bol_ita = "latin_san_bol_ita𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯"
 let s:uni_lat_mon =     "latin_mon________𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣"
 let s:uni_dotless =     "dotless__________𝚤𝚥"
 let s:uni_grk_std =     "greek_3xx________ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ_ΣΤΥΦΧΨΩ_αβγδεζηθικλμνξοπρςστυφχψω"
@@ -218,9 +218,9 @@ inoremap <F2>f <ESC>:call Uni_map_lat_frk()<CR>a
 inoremap <F2>d <ESC>:call Uni_map_lat_dbl()<CR>a
 inoremap <F2>bf <ESC>:call Uni_map_lat_bol_frk()<CR>a
 inoremap <F2>s <ESC>:call Uni_map_lat_san()<CR>a
-inoremap <F2>sb <ESC>:call Uni_map_san_bol()<CR>a
-inoremap <F2>si <ESC>:call Uni_map_san_ita()<CR>a
-inoremap <F2>sbi <ESC>:call Uni_map_san_bol_ita()<CR>a
+inoremap <F2>sb <ESC>:call Uni_map_lat_san_bol()<CR>a
+inoremap <F2>si <ESC>:call Uni_map_lat_san_ita()<CR>a
+inoremap <F2>sbi <ESC>:call Uni_map_lat_san_bol_ita()<CR>a
 inoremap <F2>g <ESC>:call Uni_map_grk()<CR>a
 inoremap <F2>gb <ESC>:call Uni_map_grk_bol()<CR>a
 inoremap <F2>gi <ESC>:call Uni_map_grk_ita()<CR>a
